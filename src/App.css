@@ -1,0 +1,286 @@
+/* 全局样式
+---------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul,ul,ol {
+  list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+	outline: none;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+}
+
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+input:focus, textarea:focus
+{
+  outline: none;
+}
+
+body {
+  text-align: center;
+  font-family: 'Ubuntu', 'Noto Sans SC';
+  padding: 5rem 12rem 0;
+  background-color: rgb(255,251,240);
+  color: black;
+}
+
+/* 导航栏
+---------------------------------------------------------------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  color: #d4237a;
+}
+
+.navbar span {
+  color: black;
+}
+
+.links a {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 1rem;
+  color: #000;
+  transition: all .15s;
+}
+
+.links a:hover {
+  color: #d4237a;
+}
+
+
+
+/* 全部博客
+---------------------------------------------------------------- */
+.blogs {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.blogs>h2 {
+  margin-bottom: 2rem;
+}
+
+.blog-preview {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 2rem 3rem;
+  transition: all .15s;
+  border-radius: 5px;
+}
+
+.blog-preview img {
+  height: 4rem;
+  transform: rotate(-45deg);
+  margin-right: 2rem;
+}
+
+.blog-preview:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.blog-preview h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #d4237a;
+}
+
+.blog-preview p {
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.blog-preview span {
+  color: black;
+}
+
+.blog-preview img {
+  display: block;
+}
+
+
+/* 详情页
+---------------------------------------------------------------- */
+.blog-detail  h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail  p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog-detail  div {
+  padding: 0 2rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  margin-bottom: 2rem;
+  border-left: 1px solid black;
+}
+
+.blog-detail  button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.blog-detail  button:hover {
+  color: #d4237a;
+}
+
+
+
+/* 新建页
+---------------------------------------------------------------- */
+.create {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 35rem;
+}
+
+.create h2 {
+  margin-bottom: 1rem;
+}
+
+.create label {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.create input,
+.create textarea {
+  width: 100%;
+  height: 2rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+.create textarea {
+  min-height: 10rem;
+  padding: 1rem;
+  resize: none;
+  font-family: 'Ubuntu', 'Noto Sans SC';
+}
+
+
+
+.create button {
+  margin: 3rem auto 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.create  button:hover {
+  color: #d4237a;
+}
+
+.create select {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: gray;
+  outline: none;
+}
+
+.create option {
+  text-align: center;
+}
